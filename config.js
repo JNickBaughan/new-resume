@@ -8,12 +8,21 @@ const config = {
   sections: {
     skills: {
       linkText: "Skill Set",
-      sectionTitle: "Language, Libraries, Scripts, & Markups",
-      subSections: {
-        languages: { deep: "", broad: "", awhile: "" },
-        software: { deep: "", broad: "", awhile: "" },
-        server: { deep: "", broad: "", awhile: "" },
-        tools: { deep: "", broad: "", awhile: "" }
+      sectionTitle: "Skills",
+      skills: {
+        deep: ["Javascript", "React", "HTML"],
+        broad: [
+          "Typescript",
+          "GraphQL",
+          "Apollo",
+          "SQL",
+          "GIT",
+          "Github",
+          "Node JS",
+          "Express"
+        ],
+        awhile: ["C#", "ASP.NET", "ArcGIS", "esri"],
+        hobby: ["Python", "GoLang"]
       }
     },
     experience: {

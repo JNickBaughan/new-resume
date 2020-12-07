@@ -5,9 +5,7 @@ import EducationSection from "./education";
 import SkillsSection from "./skills";
 
 const renderSkills = (section, key) => {
-  return (
-    <SkillsSection key={key} ref={section.ref} title={section.sectionTitle} />
-  );
+  return <SkillsSection key={key} ref={section.ref} section={section} />;
 };
 
 const renderExperience = (section, key) => {
