@@ -1,12 +1,12 @@
 import React from "react";
 
-import Card from "./card";
 import Section from "./section";
+import SectionTitle from "./section-title";
 
 const EducationSection = React.forwardRef((props, ref) => {
   return (
     <Section ref={ref}>
-      <h3>{props.title}</h3>
+      <SectionTitle sectionTitle={props.title} width={180} centerWidth={3} />
       At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
       praesentium voluptatum deleniti atque corrupti quos dolores et quas
       molestias excepturi sint occaecati cupiditate non provident, similique

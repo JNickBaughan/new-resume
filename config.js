@@ -10,19 +10,36 @@ const config = {
       linkText: "Skill Set",
       sectionTitle: "Skills",
       skills: {
-        deep: ["Javascript", "React", "HTML"],
+        deep: ["Javascript", "React"],
         broad: [
           "Typescript",
+          "HTML",
+          "Redux",
+          "CSS",
           "GraphQL",
           "Apollo",
           "SQL",
           "GIT",
           "Github",
           "Node JS",
-          "Express"
+          "Express",
+          "Visual Studio Code"
         ],
-        awhile: ["C#", "ASP.NET", "ArcGIS", "esri"],
-        hobby: ["Python", "GoLang"]
+        hobby: ["Python", "GoLang", "Chrome extensions", "AWS"],
+        awhile: [
+          "C#",
+          "ASP.NET",
+          "ArcGIS",
+          "esri",
+          "Dojo Toolkit",
+          "Java",
+          "Selenium",
+          "TortoiseSVN",
+          "SourceTree",
+          "Visual Studio",
+          "IIS",
+          "ArcGIS Server"
+        ]
       }
     },
     experience: {

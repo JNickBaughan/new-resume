@@ -10,12 +10,7 @@ const StyledSection = styled.div`
 `;
 
 export const Section = React.forwardRef((props, ref) => {
-  return (
-    <StyledSection ref={ref}>
-      <h1>{props.sectionName}</h1>
-      {props.children}
-    </StyledSection>
-  );
+  return <StyledSection ref={ref}>{props.children}</StyledSection>;
 });
 
 export default Section;
