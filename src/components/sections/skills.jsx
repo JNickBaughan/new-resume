@@ -3,34 +3,55 @@ import styled from "styled-components";
 
 import Section from "./section";
 import SectionTitle from "./section-title";
+import SkillContainer from "./skill-container";
 
-const Content = styled.div`
-  color: rgb(102, 119, 136);
+const SkillSubSection = styled.div`
+  display: flex;
 `;
 
-const mapSkills = (skill, index, arr) => {
-  return `${skill}${arr.length - 1 === index ? "" : ", "}`;
-};
+const TitleSection = styled.div`
+  flex-grow: 2;
+`;
+
+const SkillRow = styled.div`
+  display: flex;
+`;
+
+const SkillPanel = styled.div`
+  flex-grow: 1;
+  grid-area: one;
+  height: 100%;
+`;
+
+const Container = styled.div`
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(auto-fill, 120px);
+  grid-row-gap: 0.5em;
+  grid-column-gap: 1em;
+`;
 
 const SkillsSection = React.forwardRef((props, ref) => {
   const { skills, sectionTitle } = props.section;
   return (
     <Section ref={ref}>
       <SectionTitle sectionTitle={sectionTitle} width={200} centerWidth={1} />
-      <Content>
-        <h6>Deep Knowledge - work with them everyday</h6>
-        <strong>{skills.deep.map(mapSkills)}</strong>
-        <hr />
-        <h6>Broad Knowledge</h6>
-        <strong>{skills.broad.map(mapSkills)}</strong>
-        <hr />
-        <h6>Personal Projects</h6>
-        <strong>{skills.hobby.map(mapSkills)}</strong>
-        <hr />
-        <h6>Used them... but it's been a while</h6>
-        <strong>{skills.awhile.map(mapSkills)}</strong>
-        <hr />
-      </Content>
+      <h4>Languages, Scripts, & Markups</h4>
+      {/* <SkillRow>
+        <SkillPanel>
+          <SkillContainer progress={60} />
+          <SkillContainer progress={60} />
+          <SkillContainer progress={60} />
+          <SkillContainer progress={60} />
+        </SkillPanel>
+        <SkillPanel>
+          <SkillContainer progress={60} />
+          <SkillContainer progress={60} />
+          <SkillContainer progress={60} />
+          <SkillContainer progress={60} />
+        </SkillPanel>
+      </SkillRow> */}
     </Section>
   );
 });

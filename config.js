@@ -10,37 +10,55 @@ const config = {
       linkText: "Skill Set",
       sectionTitle: "Skills",
       skills: {
-        deep: ["Javascript", "React"],
-        broad: [
-          "Typescript",
-          "HTML",
-          "Redux",
-          "CSS",
-          "GraphQL",
-          "Apollo",
-          "SQL",
-          "GIT",
-          "Github",
-          "Node JS",
-          "Express",
-          "Visual Studio Code"
+        "Languages, Libraries, Scripts, & Markups": [
+          {
+            name: "Javascript",
+            level: 90
+          },
+          {
+            name: "React",
+            level: 90
+          }
         ],
-        hobby: ["Python", "GoLang", "Chrome extensions", "AWS"],
-        awhile: [
-          "C#",
-          "ASP.NET",
-          "ArcGIS",
-          "esri",
-          "Dojo Toolkit",
-          "Java",
-          "Selenium",
-          "TortoiseSVN",
-          "SourceTree",
-          "Visual Studio",
-          "IIS",
-          "ArcGIS Server"
+        "Developer Tools": [
+          {
+            name: "Github",
+            level: 60
+          }
         ]
       }
+      // skills: {
+      //   deep: ["Javascript", "React"],
+      //   broad: [
+      //     "Typescript",
+      //     "HTML",
+      //     "Redux",
+      //     "CSS",
+      //     "GraphQL",
+      //     "Apollo",
+      //     "SQL",
+      //     "GIT",
+      //     "Github",
+      //     "Node JS",
+      //     "Express",
+      //     "Visual Studio Code"
+      //   ],
+      //   hobby: ["Python", "GoLang", "Chrome extensions", "AWS"],
+      //   awhile: [
+      //     "C#",
+      //     "ASP.NET",
+      //     "ArcGIS",
+      //     "esri",
+      //     "Dojo Toolkit",
+      //     "Java",
+      //     "Selenium",
+      //     "TortoiseSVN",
+      //     "SourceTree",
+      //     "Visual Studio",
+      //     "IIS",
+      //     "ArcGIS Server"
+      //   ]
+      // }
     },
     experience: {
       linkText: "Experience",
