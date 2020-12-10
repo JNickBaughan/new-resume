@@ -1,7 +1,7 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 //test
-let PORT = 3000;
+let PORT = process.env.port || 3000;
 let server = express();
 const middlewares = [
   express.static("dist"),
