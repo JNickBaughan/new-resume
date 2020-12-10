@@ -1,1 +1,1 @@
-web: npm run start
+web: npm run build-frontend && npm run copy-content && npm run start
