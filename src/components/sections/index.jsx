@@ -14,6 +14,7 @@ const renderExperience = (section, key) => {
       key={key}
       ref={section.ref}
       title={section.sectionTitle}
+      positions={section.positions}
     />
   );
 };
