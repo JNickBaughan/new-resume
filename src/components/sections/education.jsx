@@ -2,55 +2,15 @@ import React from "react";
 
 import Section from "./section";
 import SectionTitle from "./section-title";
+import ExperienceContainer from "./experience";
 
 const EducationSection = React.forwardRef((props, ref) => {
   return (
     <Section ref={ref}>
       <SectionTitle sectionTitle={props.title} width={180} centerWidth={3} />
-      At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
-      praesentium voluptatum deleniti atque corrupti quos dolores et quas
-      molestias excepturi sint occaecati cupiditate non provident, similique
-      sunt in culpa qui officia deserunt mollitia animi, id est laborum et
-      dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.
-      Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
-      impedit quo minus id quod maxime placeat facere possimus, omnis voluptas
-      assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut
-      officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates
-      repudiandae sint et molestiae non recusandae. Itaque earum rerum hic
-      tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias
-      consequatur aut perferendis doloribus asperiores repellat. At vero eos et
-      accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
-      voluptatum deleniti atque corrupti quos dolores et quas molestias
-      excepturi sint occaecati cupiditate non provident, similique sunt in culpa
-      qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et
-      harum quidem rerum facilis est et expedita distinctio. Nam libero tempore,
-      cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod
-      maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor
-      repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum
-      necessitatibus saepe eveniet ut et voluptates repudiandae sint et
-      molestiae non recusandae. At vero eos et accusamus et iusto odio
-      dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque
-      corrupti quos dolores et quas molestias excepturi sint occaecati
-      cupiditate non provident, similique sunt in culpa qui officia deserunt
-      mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum
-      facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis
-      est eligendi optio cumque nihil impedit quo minus id quod maxime placeat
-      facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
-      Temporibus autem quibusdam et aut officiis debitis aut rerum
-      necessitatibus saepe eveniet ut et voluptates repudiandae sint et
-      molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente
-      delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut
-      perferendis doloribus asperiores repellat. At vero eos et accusamus et
-      iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
-      deleniti atque corrupti quos dolores et quas molestias excepturi sint
-      occaecati cupiditate non provident, similique sunt in culpa qui officia
-      deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem
-      rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta
-      nobis est eligendi optio cumque nihil impedit quo minus id quod maxime
-      placeat facere possimus, omnis voluptas assumenda est, omnis dolor
-      repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum
-      necessitatibus saepe eveniet ut et voluptates repudiandae sint et
-      molestiae non recusandae.
+      {props.positions.map((position) => (
+        <ExperienceContainer {...position}></ExperienceContainer>
+      ))}
     </Section>
   );
 });

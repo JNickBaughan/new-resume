@@ -91,7 +91,36 @@ const config = {
     },
     education: {
       linkText: "Education",
-      sectionTitle: "Education"
+      sectionTitle: "Education",
+      positions: [
+        {
+          company: "Virginia Commonwealth University",
+          sub: "",
+          title: "Graduate Certificate of Geographic Information Systems",
+          tenure: "Graduated 2010",
+          logo: "/VCU.png",
+          width: 40,
+          height: 16
+        },
+        {
+          company: "Virginia Commonwealth University",
+          sub: "",
+          title: "Bachelors of Science in Urban Studies & Geography",
+          tenure: "Graduated 2009",
+          logo: "/VCU.png",
+          width: 40,
+          height: 16
+        },
+        {
+          company: "J. Sareant Reynolds Community College",
+          sub: "",
+          title: "Associates of Science in Business Administration",
+          tenure: "Graduated 2006",
+          logo: "/jsrcc.png",
+          width: 40,
+          height: 16
+        }
+      ]
     }
   }
 };
