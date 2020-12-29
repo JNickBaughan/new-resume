@@ -64,6 +64,7 @@ const config = {
         },
         {
           company: "Virginia Commonwealth University",
+          sub: "Information Systems Department",
           title: "C# / Web Developement Student Tutor",
           tenure: "2012",
           logo: "/VCU.png",

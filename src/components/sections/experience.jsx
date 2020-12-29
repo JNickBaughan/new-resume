@@ -13,26 +13,22 @@ const Container = styled.div`
   padding: 1rem;
   display: grid;
   min-height: 11.25rem;
-  border-top-width: 1px;
-  border-right-width: 1px;
-  border-bottom-width: 1px;
-  border-left-width: 1px;
+  border-width: 1px;
   border-radius: 2px;
-  border-top-style: solid;
-  border-right-style: solid;
-  border-bottom-style: solid;
-  border-left-style: solid;
+  border-style: solid;
   align-items: center;
   background-color: #ffffff;
   color: #10162f;
   border-color: #10162f;
   position: relative;
-  transition: 200ms transform;
+  padding: 25px;
+  margin: 15px 0;
 `;
 
 const ExperienceContainer = ({
   logo,
   company,
+  sub,
   title,
   tenure,
   width,
@@ -41,6 +37,7 @@ const ExperienceContainer = ({
   return (
     <Container>
       <h2>{company}</h2>
+      {sub && <p>{sub}</p>}
       <p>{title}</p>
       <p>{tenure}</p>
       <Logo logo={logo} width={width} height={height}></Logo>
