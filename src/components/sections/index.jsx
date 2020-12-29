@@ -3,6 +3,7 @@ import React from "react";
 import ExperienceSection from "./professionalExperience";
 import EducationSection from "./education";
 import SkillsSection from "./skills";
+import PortfolioSection from "./portfolio";
 
 const renderSkills = (section, key) => {
   return <SkillsSection key={key} ref={section.ref} section={section} />;
@@ -30,10 +31,22 @@ const renderEducation = (section, key) => {
   );
 };
 
+const renderPortfolio = (section, key) => {
+  return (
+    <PortfolioSection
+      key={key}
+      ref={section.ref}
+      title={section.sectionTitle}
+      projects={section.projects}
+    />
+  );
+};
+
 const renderMap = {
   skills: renderSkills,
   experience: renderExperience,
-  education: renderEducation
+  education: renderEducation,
+  portfolio: renderPortfolio
 };
 
 const renderSections = (sections) => {

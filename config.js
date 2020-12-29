@@ -121,6 +121,17 @@ const config = {
           height: 16
         }
       ]
+    },
+    portfolio: {
+      linkText: "Portfolio",
+      sectionTitle: "Portfolio",
+      projects: [
+        {
+          name: "Tax Assessor Site",
+          link: "http://tax-assessor.JNickBaughan.com",
+          git: "https://github.com/JNickBaughan/tax-assessor-form"
+        }
+      ]
     }
   }
 };

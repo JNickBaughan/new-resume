@@ -44,19 +44,6 @@ export const Bio = ({ photoUrl, title, blurb, name }) => {
         <a target="_blank" href="https://github.com/JNickBaughan">
           Github
         </a>
-        <br />
-        <br />
-        <br />
-        <a target="_blank" href="https://tax-assessor.JNickBaughan.com">
-          Formik React tax-assessor site
-        </a>{" "}
-        -{" "}
-        <a
-          target="_blank"
-          href="https://github.com/JNickBaughan/tax-assessor-form"
-        >
-          tax-assessor github repository
-        </a>
       </BioContainer>
     </React.Fragment>
   );
