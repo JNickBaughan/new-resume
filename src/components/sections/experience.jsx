@@ -9,22 +9,6 @@ const Logo = styled.div`
   padding: 10px;
 `;
 
-const Container = styled.div`
-  padding: 1rem;
-  display: grid;
-  min-height: 11.25rem;
-  border-width: 1px;
-  border-radius: 2px;
-  border-style: solid;
-  align-items: center;
-  background-color: #ffffff;
-  color: #10162f;
-  border-color: #10162f;
-  position: relative;
-  padding: 25px;
-  margin: 15px 0;
-`;
-
 const ExperienceContainer = ({
   logo,
   company,
@@ -35,13 +19,13 @@ const ExperienceContainer = ({
   height
 }) => {
   return (
-    <Container>
+    <React.Fragment>
       <h2>{company}</h2>
       {sub && <p>{sub}</p>}
       <p>{title}</p>
       <p>{tenure}</p>
       <Logo logo={logo} width={width} height={height}></Logo>
-    </Container>
+    </React.Fragment>
   );
 };
 
