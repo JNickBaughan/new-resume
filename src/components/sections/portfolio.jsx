@@ -11,14 +11,11 @@ const PortfolioSection = React.forwardRef((props, ref) => {
       {props.projects.map((project) => (
         <PopoutContainer>
           {project.name}
-          <a target="_blank" href="http://tax-assessor.JNickBaughan.com">
-            Formik React tax-assessor site
+          <a target="_blank" href={project.link}>
+            {project.linkText}
           </a>
-          <a
-            target="_blank"
-            href="https://github.com/JNickBaughan/tax-assessor-form"
-          >
-            github repository
+          <a target="_blank" href={project.gitLink}>
+            {project.gitText}
           </a>
         </PopoutContainer>
       ))}

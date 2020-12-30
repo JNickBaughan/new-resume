@@ -116,7 +116,7 @@ const config = {
           sub: "",
           title: "Associates of Science in Business Administration",
           tenure: "Graduated 2006",
-          logo: "/jsrcc.png",
+          logo: "/jsrcc.PNG",
           width: 40,
           height: 16
         }
@@ -129,7 +129,9 @@ const config = {
         {
           name: "Tax Assessor Site",
           link: "http://tax-assessor.JNickBaughan.com",
-          git: "https://github.com/JNickBaughan/tax-assessor-form"
+          linkText: "Formik React tax-assessor site",
+          gitLink: "https://github.com/JNickBaughan/tax-assessor-form",
+          gitText: "Github repository"
         }
       ]
     }
