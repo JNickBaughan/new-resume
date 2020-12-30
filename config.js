@@ -52,7 +52,8 @@ const config = {
           tenure: "January 2017 to present",
           logo: "/costar.png",
           width: 40,
-          height: 16
+          height: 16,
+          stockComponent: "stock"
         },
         {
           company: "Worldview Solutions",

@@ -22,7 +22,6 @@ const Container = styled.div`
 `;
 
 const PopoutContainer = (props) => {
-  console.dir(props);
   return <Container margin={props.margin}>{props.children}</Container>;
 };
 

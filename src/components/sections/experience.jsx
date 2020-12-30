@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import Stock from "./stock";
 
 const Logo = styled.div`
   width: ${(props) => `${props.width}px`};
@@ -16,8 +17,12 @@ const ExperienceContainer = ({
   title,
   tenure,
   width,
-  height
+  height,
+  stockComponent
 }) => {
+  const ImportComponent =
+    (stockComponent && React.lazy(() => import(`./${stockComponent}`))) || null;
+
   return (
     <React.Fragment>
       <h2>{company}</h2>
@@ -25,6 +30,11 @@ const ExperienceContainer = ({
       <p>{title}</p>
       <p>{tenure}</p>
       <Logo logo={logo} width={width} height={height}></Logo>
+      {ImportComponent && (
+        <React.Suspense fallback={<div>Loading...</div>}>
+          <ImportComponent />
+        </React.Suspense>
+      )}
     </React.Fragment>
   );
 };
