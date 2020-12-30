@@ -33,7 +33,7 @@ server.get("/costar", (_, res) => {
           stockClass = "stock-up";
         }
         res.status(200);
-        res.send({ lastClose: `$${lastClose}`, stockUp });
+        res.send({ lastClose: `${lastClose}`, stockUp });
       })
       .catch((e) => {
         res.status(500);
