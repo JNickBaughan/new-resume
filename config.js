@@ -53,7 +53,8 @@ const config = {
           logo: "/costar.png",
           width: 40,
           height: 16,
-          stockComponent: "stock"
+          stockUp: "",
+          lastClose: ""
         },
         {
           company: "Worldview Solutions",

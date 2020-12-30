@@ -4,6 +4,7 @@ import Header from "./components/header";
 import Bio from "./components/bio";
 import ScrollContainer from "./components/scroll";
 import renderSections from "./components/sections";
+const axios = require("axios");
 
 const Wrapper = styled.div`
   overflow-y: hidden;
@@ -41,7 +42,36 @@ const MainWrapper = styled.div`
 `;
 
 export const Container = ({ config }) => {
-  const { sections } = config;
+  const [configState, setConfig] = React.useState(config);
+  React.useEffect(() => {
+    const getCostarStockPrice = async () => {
+      const response = await axios.get("/costar");
+      const {
+        data: { lastClose, stockUp }
+      } = response;
+      const t = {
+        ...configState,
+        ...{
+          sections: {
+            ...configState.sections,
+            experience: {
+              ...configState.sections.experience,
+              positions: [
+                ...config.sections.experience.positions.map((position) => {
+                  return position.company === "Costar Group"
+                    ? { ...position, lastClose, stockUp }
+                    : position;
+                })
+              ]
+            }
+          }
+        }
+      };
+      setConfig(t);
+    };
+    getCostarStockPrice();
+  }, []);
+  let { sections } = configState;
 
   const scrollRef = useRef(null);
   const scrollToRef = (ref) => {
@@ -89,7 +119,6 @@ export const Container = ({ config }) => {
       return sections[section].linkText;
     })
   );
-
   return (
     <Wrapper>
       <HeaderWrapper>
@@ -100,15 +129,15 @@ export const Container = ({ config }) => {
       </HeaderWrapper>
       <BioWrapper>
         <Bio
-          photoUrl={config.bio.photoUrl}
-          blurb={config.bio.blurb}
-          title={config.bio.title}
-          name={config.bio.name}
+          photoUrl={configState.bio.photoUrl}
+          blurb={configState.bio.blurb}
+          title={configState.bio.title}
+          name={configState.bio.name}
         />
       </BioWrapper>
       <MainWrapper>
         <ScrollContainer ref={scrollRef} getScrollPosition={getScrollPosition}>
-          {renderSections(config.sections)}
+          {renderSections(configState.sections)}
         </ScrollContainer>
       </MainWrapper>
     </Wrapper>

@@ -1,7 +1,6 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const axios = require("axios");
-//test
 let PORT = process.env.port || 3000;
 let API_KEY = process.env.api_key;
 let server = express();

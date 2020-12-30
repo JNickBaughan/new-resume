@@ -18,11 +18,9 @@ const ExperienceContainer = ({
   tenure,
   width,
   height,
-  stockComponent
+  lastClose,
+  stockUp
 }) => {
-  const ImportComponent =
-    (stockComponent && React.lazy(() => import(`./${stockComponent}`))) || null;
-
   return (
     <React.Fragment>
       <h2>{company}</h2>
@@ -30,11 +28,7 @@ const ExperienceContainer = ({
       <p>{title}</p>
       <p>{tenure}</p>
       <Logo logo={logo} width={width} height={height}></Logo>
-      {ImportComponent && (
-        <React.Suspense fallback={<div>Loading...</div>}>
-          <ImportComponent />
-        </React.Suspense>
-      )}
+      <Stock lastClose={lastClose} stockUp={stockUp} />
     </React.Fragment>
   );
 };
