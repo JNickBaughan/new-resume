@@ -19,8 +19,16 @@ const config = {
           "React"
         ],
         broad: [
-          "Typescript",
-          "HTML",
+          {
+            skill: "Typescript",
+            url:
+              "https://github.com/JNickBaughan?tab=repositories&q=&type=&language=typescript"
+          },
+          {
+            skill: "HTML",
+            url:
+              "https://github.com/JNickBaughan?tab=repositories&q=&type=&language=html"
+          },
           "Redux",
           "CSS",
           "GraphQL",
