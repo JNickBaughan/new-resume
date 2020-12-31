@@ -27,8 +27,24 @@ const Container = styled.div`
   padding: -9px;
 `;
 
+const Anchor = styled.a`
+  text-decoration: none;
+  color: #d35b3f;
+  &:hover {
+    border-bottom: 2px solid #d35b3f;
+  }
+`;
+
 const mapSkills = (skill, index, arr) => {
-  return `${skill}${arr.length - 1 === index ? "" : ", "}`;
+  const separator = arr.length - 1 === index ? "" : ",  ";
+  return skill.skill ? (
+    <Anchor
+      target="_blank"
+      href={skill.url}
+    >{`${skill.skill}${separator}`}</Anchor>
+  ) : (
+    <span>{`${skill}${separator}`}</span>
+  );
 };
 
 const SkillsSection = React.forwardRef((props, ref) => {

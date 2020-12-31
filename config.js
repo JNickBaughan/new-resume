@@ -10,7 +10,14 @@ const config = {
       linkText: "Skill Set",
       sectionTitle: "Skills",
       skills: {
-        deep: ["Javascript", "React"],
+        deep: [
+          {
+            skill: "Javascript",
+            url:
+              "https://github.com/JNickBaughan?tab=repositories&q=&type=&language=javascript"
+          },
+          "React"
+        ],
         broad: [
           "Typescript",
           "HTML",
@@ -25,7 +32,21 @@ const config = {
           "Express",
           "Visual Studio Code"
         ],
-        hobby: ["Python", "GoLang", "Chrome extensions", "AWS"],
+        hobby: [
+          {
+            skill: "GoLang",
+            url:
+              "https://github.com/JNickBaughan?tab=repositories&q=&type=&language=go"
+          },
+          "Chrome extensions",
+          {
+            skill: "Python",
+            url:
+              "https://github.com/JNickBaughan?tab=repositories&q=&type=&language=python"
+          },
+          "AWS",
+          "Elastic Beanstalk"
+        ],
         awhile: [
           "C#",
           "ASP.NET",
