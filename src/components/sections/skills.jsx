@@ -38,10 +38,12 @@ const Anchor = styled.a`
 const mapSkills = (skill, index, arr) => {
   const separator = arr.length - 1 === index ? "" : ",  ";
   return skill.skill ? (
-    <Anchor
-      target="_blank"
-      href={skill.url}
-    >{`${skill.skill}${separator}`}</Anchor>
+    <span>
+      <Anchor target="_blank" href={skill.url}>
+        {skill.skill}
+      </Anchor>
+      {separator}
+    </span>
   ) : (
     <span>{`${skill}${separator}`}</span>
   );

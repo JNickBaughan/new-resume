@@ -47,6 +47,7 @@ const config = {
               "https://github.com/JNickBaughan?tab=repositories&q=&type=&language=go"
           },
           "Chrome extensions",
+          "Web Components",
           {
             skill: "Python",
             url:
