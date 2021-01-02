@@ -159,6 +159,13 @@ const config = {
       sectionTitle: "Portfolio",
       projects: [
         {
+          name: "Heart Health Tracker",
+          link: "http://heart-health-tracker.JNickBaughan.com",
+          linkText: "Formik Yup app to track heart health vital statistics",
+          gitLink: "https://github.com/JNickBaughan/heart-health-tracker",
+          gitText: "Github repository"
+        },
+        {
           name: "Tax Assessor Site",
           link: "http://tax-assessor.JNickBaughan.com",
           linkText: "Formik React tax-assessor site",
