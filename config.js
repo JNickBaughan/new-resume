@@ -84,7 +84,12 @@ const config = {
           width: 40,
           height: 16,
           stockUp: "",
-          lastClose: ""
+          lastClose: "",
+          content: [
+            `CoStar Group, Inc. supplies data, analytics and marketing services to the Real Estate Industry`,
+            `I work as part of a small team working on a internal React application designed to help CoStar's research department manage their day to day interviews and efficiently collect the data that drives the business.`,
+            `I have designed and implemented several features using React including a component that allows for batch updating inline editable data and a wizard component that allows researchers to manage a broker's listings when they change companies.`
+          ]
         },
         {
           company: "Worldview Solutions",
@@ -92,7 +97,13 @@ const config = {
           tenure: "2012 to 2017",
           logo: "/WVS.JPG",
           width: 40,
-          height: 16
+          height: 16,
+          content: [
+            `Worldview Solutions is a geospatial information technology consulting firm specializing in the delivery of GIS applications and services. They pride themselves on qualitiy products delivered with an emphasis on customer service`,
+            `In my first few years as a team member with Worldview Solutions my primary responsibility was refactoring the company's parcel viewer application to be a more configurable and customizable product. I configured, deployed, and helped maintain 18 of these applications for various municipalities throughout Virginia working closely with the client.`,
+            `I worked to design and implement an application for the Virginia Department of Health to manage their water pollution citations. My code allowed users to filter through citations and generate a PDF using their ipads in the field. All data was collected and stored in ESRI's ArcGIS collector application.`,
+            `While working with the Virginia Department of Environmental Quality I worked with a team to migrate several of their existing permit modules to a more modern web application. The new system is built with Backbone/Marionette with a restful backend built with ASP.NET's Entity Framework.`
+          ]
         },
         {
           company: "Virginia Commonwealth University",
@@ -101,7 +112,10 @@ const config = {
           tenure: "2012",
           logo: "/VCU.png",
           width: 40,
-          height: 16
+          height: 16,
+          content: [
+            `Worked one-on-one with first year students within the Information System track in subjects including HTML, CSS, Javascrip, & C#`
+          ]
         },
         {
           company: "FerrisWinder PLLC",
@@ -109,7 +123,11 @@ const config = {
           tenure: "2011",
           logo: "/ferrisWinder.png",
           width: 40,
-          height: 16
+          height: 16,
+          content: [
+            `The law office of FerrisWinder PLLC provides legal services in bankruptcy, Real Estate, Warranty/Lemon Law and more.`,
+            `As a bankruptcy paralegal for FerrisWinder I handled multiple bankruptcies. This included preparation and filing of petitions, receiving and reviewing all client financial documents, maintaining scheduling of cases, and acting as a point of contact between attorneys and clients.`
+          ]
         },
         {
           company: "Beirman, Ward, & Wood",
@@ -117,7 +135,11 @@ const config = {
           tenure: "2010 - 2011",
           logo: "/bww.JPG",
           width: 40,
-          height: 16
+          height: 16,
+          content: [
+            `BWW Law Group, LLC provides legal representation in Maryland, Virginia and District of Columbia to mortgage lenders, mortgage serviceser, banks and other financial institutions.`,
+            `As a bankruptcy paralegal/Motion filer with BWW my responsibilities included reviewing financial documentation for cases, preparing and filing Motions for Relief and mailing notification to all proper parties.`
+          ]
         }
       ]
     },
