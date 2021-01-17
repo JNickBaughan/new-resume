@@ -17,6 +17,7 @@ const PortfolioSection = React.forwardRef((props, ref) => {
           <a target="_blank" href={project.gitLink}>
             {project.gitText}
           </a>
+          <div>{project.description}</div>
         </PopoutContainer>
       ))}
     </Section>

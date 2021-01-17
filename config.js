@@ -183,16 +183,19 @@ const config = {
         {
           name: "Heart Health Tracker",
           link: "http://heart-health-tracker.JNickBaughan.com",
-          linkText: "Formik Yup app to track heart health vital statistics",
+          linkText: "App to track heart health vital statistics",
           gitLink: "https://github.com/JNickBaughan/heart-health-tracker",
-          gitText: "Github repository"
+          gitText: "Github repository",
+          description:
+            "A small node/react/graphQL app built to learn AWS appSync and Amplify along with Formik and yup validation"
         },
         {
           name: "Tax Assessor Site",
           link: "http://tax-assessor.JNickBaughan.com",
           linkText: "Formik React tax-assessor site",
           gitLink: "https://github.com/JNickBaughan/tax-assessor-form",
-          gitText: "Github repository"
+          gitText: "Github repository",
+          description: "React app Built with Formik"
         }
       ]
     }
