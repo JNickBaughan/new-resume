@@ -52,7 +52,8 @@ server.get("/", (_, res) => {
                       #root{ height: 100%; }
                       #underConstruction{
                         width: 500px;
-                        top: 200px;
+                        left: 321px;
+                        top: 116px;
                         text-align: center;
                         position: absolute;
                         border: solid 5px black;
@@ -61,7 +62,7 @@ server.get("/", (_, res) => {
                         margin: auto;
                         z-index: 242;
                         line-height: 41px;
-                        transform: rotate(20deg);
+                        transform: rotate(-13deg);
                       }
                       </style>
                       <html>
