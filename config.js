@@ -1,7 +1,7 @@
 const config = {
   bio: {
     name: "[ J. Nick Baughan ]",
-    photoUrl: "/me.PNG",
+    photoUrl: "/me.jpg",
     title: "Front-end developer working with Costar Group",
     blurb: "Well versed in Javascript. Working with React daily."
   },
