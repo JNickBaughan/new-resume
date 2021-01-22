@@ -12,8 +12,8 @@ const BioContainer = styled.div`
 
 const Photo = styled.div`
   border-radius: 50%;
-  width: 229px;
-  height: 229px;
+  width: 194px;
+  height: 194px;
   background: url(${(props) => props.photoUrl});
   border: 2px solid #777;
   margin: auto;
