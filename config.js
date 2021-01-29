@@ -190,12 +190,10 @@ const config = {
             "A small node/react/graphQL app built to learn AWS appSync and Amplify along with Formik and yup validation"
         },
         {
-          name: "Tax Assessor Site",
-          link: "http://tax-assessor.JNickBaughan.com",
-          linkText: "Formik React tax-assessor site",
-          gitLink: "https://github.com/JNickBaughan/tax-assessor-form",
-          gitText: "Github repository",
-          description: "React app Built with Formik"
+          name: "Animated Input",
+          link: "https://codepen.io/JNickBaughan/pen/yKyZQd",
+          linkText: "Code Pen",
+          description: "CSS Animated Input using React"
         }
       ]
     }
