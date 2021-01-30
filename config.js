@@ -29,6 +29,8 @@ const config = {
             url:
               "https://github.com/JNickBaughan?tab=repositories&q=&type=&language=html"
           },
+          "Webpack",
+          "Babel",
           "Redux",
           "CSS",
           "GraphQL",
