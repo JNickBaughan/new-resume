@@ -4,6 +4,7 @@ import Header from "./components/header";
 import Bio from "./components/bio";
 import ScrollContainer from "./components/scroll";
 import renderSections from "./components/sections";
+import MaintenanceMessage from "./components/maintence-message";
 const axios = require("axios");
 
 const Wrapper = styled.div`
@@ -140,6 +141,7 @@ export const Container = ({ config }) => {
           {renderSections(configState.sections)}
         </ScrollContainer>
       </MainWrapper>
+      <MaintenanceMessage />
     </Wrapper>
   );
 };
