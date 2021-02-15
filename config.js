@@ -199,7 +199,7 @@ const config = {
         },
         {
           name: "WIP: Todo List",
-          link: "http://todo-env.eba-ydzacjfr.us-west-2.elasticbeanstalk.com/",
+          link: "http://todo.jnickbaughan.com",
           linkText: "React Todo List App",
           gitText: "Github repository",
           gitLink: "https://github.com/JNickBaughan/react-todo",
