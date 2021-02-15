@@ -9,8 +9,8 @@ const EducationSection = React.forwardRef((props, ref) => {
   return (
     <Section ref={ref}>
       <SectionTitle sectionTitle={props.title} width={180} centerWidth={3} />
-      {props.positions.map((position) => (
-        <PopoutContainer>
+      {props.positions.map((position, index) => (
+        <PopoutContainer key={`${index}_position`}>
           <ExperienceContainer {...position}></ExperienceContainer>
         </PopoutContainer>
       ))}

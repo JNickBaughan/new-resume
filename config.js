@@ -196,6 +196,15 @@ const config = {
           link: "https://codepen.io/JNickBaughan/pen/yKyZQd",
           linkText: "Code Pen",
           description: "CSS Animated Input using React"
+        },
+        {
+          name: "WIP: Todo List",
+          link: "http://todo-env.eba-ydzacjfr.us-west-2.elasticbeanstalk.com/",
+          linkText: "React Todo List App",
+          gitText: "Github repository",
+          gitLink: "https://github.com/JNickBaughan/react-todo",
+          description:
+            "A react app with a CI/CD pipeline using docker, TravisCI, and AWS Elastic Beanstalk"
         }
       ]
     }
