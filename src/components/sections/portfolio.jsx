@@ -8,8 +8,10 @@ const PortfolioSection = React.forwardRef((props, ref) => {
   return (
     <Section ref={ref}>
       <SectionTitle sectionTitle={props.title} width={180} centerWidth={3} />
-      {props.projects.map((project) => (
-        <PopoutContainer>
+      {props.projects.map((project, index) => (
+        <PopoutContainer
+          bottom={index + 1 === props.projects.length ? "275px" : ""}
+        >
           {project.name}
           <a target="_blank" href={project.link}>
             {project.linkText}

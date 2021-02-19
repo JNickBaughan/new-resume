@@ -15,6 +15,7 @@ const Container = styled.div`
   position: relative;
   padding: 25px;
   margin: ${(props) => (props.margin ? props.margin : "15px 0")};
+  margin-bottom: ${(props) => (props.bottom ? props.bottom : "15px")};
   &:hover {
     border-left-width: 4px;
     border-bottom-width: 4px;
@@ -22,7 +23,11 @@ const Container = styled.div`
 `;
 
 const PopoutContainer = (props) => {
-  return <Container margin={props.margin}>{props.children}</Container>;
+  return (
+    <Container bottom={props.bottom} margin={props.margin}>
+      {props.children}
+    </Container>
+  );
 };
 
 export default PopoutContainer;
