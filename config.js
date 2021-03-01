@@ -204,7 +204,7 @@ const config = {
           gitText: "Github repository",
           gitLink: "https://github.com/JNickBaughan/react-todo",
           description:
-            "A react app with a CI/CD pipeline using docker, TravisCI, and AWS Elastic Beanstalk"
+            "A react app with a CI/CD pipeline using cypress e2e tests, docker, TravisCI, and AWS Elastic Beanstalk"
         }
       ]
     }
