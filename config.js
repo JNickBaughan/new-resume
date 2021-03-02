@@ -80,7 +80,7 @@ const config = {
       positions: [
         {
           company: "Costar Group",
-          title: "Software Developer",
+          title: "Senior Software Engineer",
           tenure: "January 2017 to present",
           logo: "/costar.png",
           width: 40,
