@@ -79,9 +79,20 @@ const config = {
       sectionTitle: "Professional Experience",
       positions: [
         {
+          company: "West Creek Financial",
+          title: "Software Engineer",
+          tenure: "March 2021 to present",
+          logo: "/wc.jpg",
+          width: 40,
+          height: 25,
+          stockUp: "",
+          lastClose: "",
+          content: [""]
+        },
+        {
           company: "Costar Group",
           title: "Senior Software Engineer",
-          tenure: "January 2017 to present",
+          tenure: "January 2017 to March 2021",
           logo: "/costar.png",
           width: 40,
           height: 16,
@@ -96,7 +107,7 @@ const config = {
         {
           company: "Worldview Solutions",
           title: "Application Developer",
-          tenure: "2012 to 2017",
+          tenure: "December 2012 to December 2017",
           logo: "/WVS.JPG",
           width: 40,
           height: 16,
